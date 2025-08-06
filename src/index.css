@@ -1,0 +1,243 @@
+body {background-color: black;
+  margin: 0;
+ padding:0;
+
+ 
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  
+}
+.top img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.left {
+  position: absolute;
+  left: 10%;
+  top: 410px; /* Ajuste este valor para posicionar verticalmente */
+  width: 50%;
+  max-width: 950px;
+}
+
+.left img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(128, 0, 128, 0.3);
+}
+
+.countainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Reduzido de 300px para 200px */
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px; /* Reduzido de 1000px para 600px */
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.fotosTOP {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(128, 0, 128, 0.3);
+  transition: transform 0.3s ease;
+  aspect-ratio: 3/4;
+  max-height: 300px; /* Adicionado limite de altura */ }
+
+  .fotosTOP a {
+  display: block;
+  width: 100%;
+  height: 100%;}
+
+  .fotosTOP:nth-child(odd) {
+  grid-row: span 2;
+}
+
+.fotosTOP:nth-child(3n) {
+  transform: translateY(20px);
+}
+
+.fotosTOP img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.fotosTOP:hover {
+  transform: scale(1.03);
+  z-index: 2;
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.5);
+}
+
+.botao{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  padding: 20px;
+margin-top: 7%;
+margin-bottom: 2%;
+}
+
+.botao button {
+  background-color:rgba(240, 248, 255, 0.918);
+  color:black;
+  font-size: x-large;
+  width:150px;
+  height:60px;
+  border:2px solid red;
+  border-radius:10px;
+
+  
+}
+
+.bio {
+  background-color: aliceblue;
+  display: flex;
+  /* NÃO EXISTE flex-direction: center, o correto seria row ou column */
+  flex-direction: column; /* ou row, depende do que quer */
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+
+  box-shadow: 5px 1px 10px purple;
+  margin: 30px auto;
+  border: solid 2px;
+  border-radius: 5px;
+
+  /* ESSENCIAIS: */
+  overflow-wrap: break-word; /* Força quebra de palavra */
+  word-break: break-word;    /* Força quebra no meio da palavra */
+  max-width: 60%;            /* Limita largura máxima */
+  padding: 10px;             /* Espaçamento interno */
+}
+
+.bio h1 {
+  color:black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.logored {
+    background-color: brown;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logored img {
+    width: 60%;
+}
+
+.mid{
+    background-image: url(assets/pvideo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+    .mid video {
+    background-image: url(assets/pvideo.jpg); /* Ajuste o caminho conforme sua estrutura de pastas */ 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 122vh; /* Define uma altura mínima */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    object-fit: cover;
+}
+
+.end {
+   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.end h2 {
+  text-shadow: plum 2px 2px 2px;
+  font-size: 2.5em;
+  color:black;
+}
+
+.end p {
+  font-size: x-large;
+  color: black;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.instagram {
+  background-color: palevioletred;
+  text-decoration-color: black;
+  border: solid 2px;
+  border-radius: 100px;
+  color: black;
+}
+
+
+
+.whatsapp {
+  background-color: greenyellow;
+  border: solid 2px;
+  border-radius: 100px;
+  color: black;
+}
+
+.final {
+      background-color:black;
+    }
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: #ffffff;
+  }
+  
+}
