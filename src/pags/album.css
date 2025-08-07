@@ -10,6 +10,13 @@
     color: rgb(159, 185, 207);
 }
 
+.logo img {
+  width: 100vw;
+   max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .volts {
   display: flex;
   flex-direction: column;
@@ -153,4 +160,11 @@
     justify-content: center;
     min-height: 122vh; /* Define uma altura mínima */
     padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 }

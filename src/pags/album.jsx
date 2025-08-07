@@ -18,7 +18,7 @@ import AlbumDj12 from '../assets/ALBUM/AlbumDj12.jpg';
 import albumVid from '../assets/ALBUM/albumVid.mp4';
 
 function Album() {
-  const navigate = useNavigate(); // ✅ movido para o início do componente
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -26,7 +26,7 @@ function Album() {
         <h1> Album De Fotos</h1>
       </div>
 
-      <div>
+      <div className='logo'>
         <img src={ThallesLOG} alt="logo thalles" />
       </div>
 
