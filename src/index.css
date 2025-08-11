@@ -127,14 +127,14 @@ margin-bottom: 2%;
   /* ESSENCIAIS: */
   overflow-wrap: break-word; 
   word-break: break-word;    
-  max-width: 60%;            /* Limita largura máxima */
-  padding: 10px;             /* Espaçamento interno */
+  max-width: 90%;            /* Limita largura máxima */
+  padding: 10px;             
 }
 
 .bio h1 {
   color:black;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .logored {
