@@ -42,7 +42,7 @@ function App() {
              
 
             <div className="top">
-              <img src={ThallesLOG} alt="logo thalles" />
+              <img src={ThallesLOG} alt="logo Thalles" />
             </div>
 
             <div className="left">

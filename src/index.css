@@ -1,6 +1,8 @@
-body {background-color: black;
+html, body {background-color: black;
   margin: 0;
  padding:0;
+  max-width: 100%;
+  overflow-x: hidden;
 
  
 }
@@ -15,15 +17,20 @@ body {background-color: black;
 .top img {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
+   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .left {
   position: absolute;
-  left: 10%;
+  
   top: 410px; /* Ajuste este valor para posicionar verticalmente */
-  width: 50%;
-  max-width: 950px;
+  width: 50vw;
+   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .left img {
@@ -84,47 +91,50 @@ body {background-color: black;
   display: flex;
   flex-direction: column;
  align-items: center;
-  padding: 20px;
 margin-top: 7%;
 margin-bottom: 2%;
 }
 
 .botao button {
-  background-color:rgba(240, 248, 255, 0.918);
+  background: linear-gradient(135deg, #b25fff, #7bcafe);
+  font-weight: 700;
+  font-family: Arial, sans-serif;
   color:black;
   font-size: x-large;
   width:150px;
   height:60px;
-  border:2px solid red;
+  border:2px solid #7bcafe;
   border-radius:10px;
 
   
 }
 
+
 .bio {
   background-color: aliceblue;
   display: flex;
-  /* NÃO EXISTE flex-direction: center, o correto seria row ou column */
-  flex-direction: column; /* ou row, depende do que quer */
+  
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   font-size: large;
 
-  box-shadow: 5px 1px 10px purple;
+  box-shadow: 5px 5px 5px 8px purple;
   margin: 30px auto;
-  border: solid 2px;
-  border-radius: 5px;
+  border: solid 5px ;
+  border-radius: 10px;
 
   /* ESSENCIAIS: */
-  overflow-wrap: break-word; /* Força quebra de palavra */
-  word-break: break-word;    /* Força quebra no meio da palavra */
+  overflow-wrap: break-word; 
+  word-break: break-word;    
   max-width: 60%;            /* Limita largura máxima */
   padding: 10px;             /* Espaçamento interno */
 }
 
 .bio h1 {
   color:black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
 }
 
 .logored {
@@ -241,6 +251,8 @@ margin-bottom: 2%;
   }
 }
 
+@media (max-width: 768px) {
+   .left { max-width: 100vw; overflow-x: hidden; } }
 
 @media (prefers-color-scheme: light) {
   :root {
